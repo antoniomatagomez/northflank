@@ -1,0 +1,4 @@
+{
+	"Take_Latest_Custmer" : {"dependencies": ["START"], "map_schema": "`flow_discovery_proc`", "original_name": "crm_dom_take_latest_custmer", "input":[], "component_type":"physical_mapping_comp", "trigger_rule":"one_success"},
+	"MDM_Alignement" : {"dependencies": ["Take_Latest_Custmer"], "map_schema": "`flow_discovery_proc`", "original_name": "crm_dom_mdm_alignement", "input":[], "component_type":"physical_mapping_comp", "trigger_rule":"one_success"}
+}

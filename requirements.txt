@@ -1,0 +1,16 @@
+# Pin Airflow to match the base image (good practice when extending)
+apache-airflow==3.1.8
+
+# Snowflake and Databricks providers
+apache-airflow-providers-snowflake
+apache-airflow-providers-databricks
+
+# VaultSpeed plugin / integration
+# If you have a pip package name from VaultSpeed, add it here, e.g.:
+# vaultspeed-airflow
+# or from a private index:
+# --extra-index-url https://your-index/simple
+# vaultspeed-airflow==x.y.z
+
+# Optional: HashiCorp Vault provider (if you use Vault for secrets with VaultSpeed)
+# apache-airflow-providers-hashicorp
