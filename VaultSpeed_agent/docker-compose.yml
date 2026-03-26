@@ -1,0 +1,15 @@
+# Run from this folder: docker compose up
+# Or in Docker Desktop: open this folder and start the project
+
+services:
+  agent:
+    image: vaultspeed-agent
+    build: .
+    stdin_open: true
+    tty: true
+    environment:
+      VS_ENVIR: training-eu
+      VS_USER: "student22@taaf.be"
+      VS_PASSWORD: "taafVSdemo22!!"
+    volumes:
+      - /Users/amata/Documents/WorkDir/agent_docker_rundir:/opt/vaultspeed-agent/agent_root
