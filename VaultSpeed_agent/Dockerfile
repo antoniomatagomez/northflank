@@ -16,6 +16,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     unzip \
     curl \
     ca-certificates \
+    vim-tiny \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy and install Open JDK (place your .tar.gz in ./jdk/ when building)
