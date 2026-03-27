@@ -1,7 +1,7 @@
 # VaultSpeed Agent - Linux image with Open JDK 21
 # Place your OpenJDK 21 tarball (e.g. OpenJDK21*.tar.gz) in ./jdk/ before building
 # Base: Ubuntu 24.04 has OpenJDK 21 in repos (Debian Bookworm does not)
-# T
+# TT
 
 FROM ubuntu:24.04
 
