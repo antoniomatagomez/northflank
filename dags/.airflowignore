@@ -1,0 +1,4 @@
+# Airflow 3 writes bundle metadata under dag_processor/; scanning it can trigger
+# "recursive loop" on some RWX volumes (symlink / NFS quirks). Not DAG source.
+dag_processor
+agent
