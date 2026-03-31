@@ -1,4 +1,4 @@
-__version__ = "6.0.0.4"
+__version__ = "7.0.0.0"
 
 def get_provider_info():
     return {

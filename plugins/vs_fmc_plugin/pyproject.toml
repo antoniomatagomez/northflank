@@ -23,18 +23,18 @@ requires-python = ">=3.10"
 dependencies = [
     #"apache-airflow>=3.1.5", # version is not pinned here to allow backwards compatibility and avoid dependency issues
     "apache-airflow-providers-standard",
-    "apache-airflow-providers-http>=5.6.1"
+    "apache-airflow-providers-http>=5.3.0"
 ]
 
 [project.optional-dependencies]
 jdbc = ["apache-airflow-providers-jdbc>=5.3.1"]
-snowflake = ["apache-airflow-providers-snowflake>=6.8.0"]
-google = ["apache-airflow-providers-google>=19.2.0"]
+snowflake = ["apache-airflow-providers-snowflake>=6.4.0"]
+google = ["apache-airflow-providers-google>=15.1.0"]
 databricks = ["apache-airflow-providers-databricks>=7.8.1"]
 all = [
     "apache-airflow-providers-jdbc>=5.3.1",
-    "apache-airflow-providers-snowflake>=6.8.0",
-    "apache-airflow-providers-google>=19.2.0",
+    "apache-airflow-providers-snowflake>=6.4.0",
+    "apache-airflow-providers-google>=15.1.0",
     "apache-airflow-providers-databricks>=7.8.1",
 ]
 
