@@ -2,4 +2,3 @@
 # "recursive loop" on some RWX volumes (symlink / NFS quirks). Not DAG source.
 dag_processor
 agent
-source_metadata
