@@ -59,6 +59,9 @@ ENV PATH="/opt/venv/bin:${PATH}"
 COPY scripts/ ./scripts/
 RUN chmod +x ./scripts/*.sh
 
+COPY FMC_Deploy.sh .
+RUN chmod +x ./FMC_Deploy.sh
+
 # Default env (override at run)
 ENV VS_ENVIR=app
 ENV AGENT_PARENT_FOLDER=${AGENT_HOME}/agent_root
