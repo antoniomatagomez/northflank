@@ -165,6 +165,7 @@ echo ">>> Starting VaultSpeed agent (Java: $JAVA_CMD)"
 "$JAVA_CMD" -version || true
 "$JAVA_CMD" \
     -Djava.util.logging.config.file="${AGENT_FOLDER_PATH}/logging.properties" \
+    -Dnet.snowflake.jdbc.enableBouncyCastleProvider=true \
     -jar "${AGENT_FOLDER_PATH}/vs-agent.jar" \
     "propsfile=${AGENT_FOLDER_PATH}/client.properties" &
 JAVA_PID=$!
