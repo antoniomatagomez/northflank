@@ -73,6 +73,16 @@ else
     unzip -o "$AGENT_ZIP_FILEPATH" -d "$AGENT_PARENT_FOLDER"
 fi
 
+# Copy FMC_Deploy.sh from image into the agent directory on the volume.
+# VaultSpeed references it via fmc_deploy.cmd in connections.properties.
+FMC_DEPLOY_SRC="${AGENT_HOME}/FMC_Deploy.sh"
+FMC_DEPLOY_DST="${AGENT_FOLDER_PATH}/FMC_Deploy.sh"
+if [ -f "$FMC_DEPLOY_SRC" ]; then
+    echo ">>> Copying FMC_Deploy.sh to ${FMC_DEPLOY_DST}"
+    cp "$FMC_DEPLOY_SRC" "$FMC_DEPLOY_DST"
+    chmod 777 "$FMC_DEPLOY_DST"
+fi
+
 # Update paths in config (agent home and log dir)
 echo ">>> Updating agent config paths"
 if [ -f "${AGENT_FOLDER_PATH}/client.properties" ]; then
